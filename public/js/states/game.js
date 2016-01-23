@@ -5,8 +5,7 @@
     { x: 100, y: 100 },
     //payer 2
     { x: 600, y: 100 }
-
-  ]
+  ];
 
   wrizzard_kick.Game = function(){
 
@@ -30,6 +29,16 @@
   };
 
   wrizzard_kick.Game.prototype.update = function(){
+
+    if( this.player_1.x < this.player_2.x ){
+      //player 1 is on the left side
+      this.player_1.facing = wrizzard_kick.Player.FACING.RIGHT;
+      this.player_2.facing = wrizzard_kick.Player.FACING.LEFT;
+    } else {
+      //player 1 is on right side
+      this.player_1.facing = wrizzard_kick.Player.FACING.LEFT;
+      this.player_2.facing = wrizzard_kick.Player.FACING.RIGHT;
+    }
 
   };
 

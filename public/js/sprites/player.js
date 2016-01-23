@@ -8,12 +8,17 @@
     }
   };
 
-  // sprite class constructor
+  var FACING_FACTOR = {
+    LEFT : -1,
+    RIGHT : 1
+  };
 
+  // sprite class constructor
   wrizzard_kick.Player = function (game, id, name) {
     this.game = game;
     this.id   = id;
     this.name = name ? name : 'Player ' + (id + 1);
+    this.facing; //direction that player is facing, state update this
 
     // super constructor
     //
@@ -32,4 +37,16 @@
     }
   });
 
+  //public static variable
+  wrizzard_kick.Player.FACING = {
+    LEFT : 'LEFT',
+    RIGHT : 'RIGHT'
+  }
+
+  //is invoked on every frame
+  wrizzard_kick.Player.prototype.update = function() {
+
+    //update facing
+    this.scale.x = FACING_FACTOR[ this.facing ];
+  }
 })();
