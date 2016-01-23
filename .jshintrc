@@ -1,0 +1,9 @@
+{
+  'globals' : {
+    'window' : true,
+    'wrizzard_kick' : true,
+    'Phaser' : true
+  };
+  'undef' : true,
+  'unused' : true
+}
