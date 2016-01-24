@@ -17,7 +17,7 @@
   wrizzard_kick.Game.prototype.create = function(){
 
     this.player_1 = new wrizzard_kick.Player( this.game, 0 );
-    this.player_2 = new wrizzard_kick.Player( this.game, 0 );
+    this.player_2 = new wrizzard_kick.Player( this.game, 1 );
     this.game.add.existing(this.player_1);
     this.game.add.existing(this.player_2);
 
