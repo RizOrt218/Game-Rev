@@ -19,7 +19,7 @@
       width : 100,
       height : 96,
       frames : 18,
-      freames_per_row : 9 //split spritesheet by player/row
+      frames_per_row : 9 //split spritesheet by player/row
     }
   }
- }
+ };

@@ -1,5 +1,5 @@
 {
-  "global" : {
+  "globals" : {
     "window" : true,
     "wrizzard_kick" : true,
     "Phaser" : true

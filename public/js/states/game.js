@@ -26,6 +26,8 @@
     this.player_2.x = INITIAL_POSITION[1].x;
     this.player_2.y = INITIAL_POSITION[1].y;
 
+    // initialize input handler
+     this.input = new wrizzard_kick.GameInput(this);
   };
 
   wrizzard_kick.Game.prototype.update = function(){
@@ -43,6 +45,10 @@
   };
 
   wrizzard_kick.Game.prototype.shutdown = function(){
+
+  };
+
+  wrizzard_kick.Game.prototype.continue = function(){
 
   };
 }());

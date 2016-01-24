@@ -24,7 +24,7 @@
     this.game = game;
     this.id   = id;
     this.name = name ? name : 'Player ' + (id + 1);
-    this.FACING; //direction that player is facing, state update this
+    this.facing; //direction that player is facing, state update this
 
     // super constructor call
     Phaser.Sprite.call(this, game, 0, 0, wrizzard_kick.ASSETS.SPRITESHEET.PLAYER.name);
@@ -55,6 +55,30 @@
   wrizzard_kick.Player.prototype.update = function() {
     //update facing
     this.scale.x = FACING_FACTOR[ this.facing ];
+  };
+
+  wrizzard_kick.Player.prototype.jump = function(){
+
+  };
+
+  wrizzard_kick.Player.prototype.dive = function(){
+
+  };
+
+  wrizzard_kick.Player.prototype.dive_stop = function(){
+
+  };
+
+  wrizzard_kick.Player.prototype.step_left = function(){
+    console.log( 'stepping left' );
+  };
+
+  wrizzard_kick.Player.prototype.step_right = function(){
+
+  };
+
+  wrizzard_kick.Player.prototype.stop = function(){
+
   };
 
 })();
